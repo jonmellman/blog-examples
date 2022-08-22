@@ -1,4 +1,4 @@
-Repo for example code from https://www.jonmellman.com/posts/typescript-for-api-contracts-1
+Repo for example code from https://www.jonmellman.com/posts/typescript-for-api-contracts
 
 ## Installation
 
