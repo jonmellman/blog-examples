@@ -10,7 +10,6 @@ usersRouter.get<
 >('/api/users/:userId', async (req, res) => {
   const { userId } = req.params;
   const user = await dao.getUser(userId);
-  user.userId = user.userId.toString();
 
   res.status(200).json(user);
 });
