@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/create-react-app/tsconfig.json",
+  "include": [
+    "**/*.tsx"
+  ],
+  "compilerOptions": {
+    "outDir": "../dist",
+    "target": "es6" // esbuild doesn't support es5
+  }
+}

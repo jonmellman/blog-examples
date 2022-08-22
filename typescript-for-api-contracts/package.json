@@ -1,0 +1,31 @@
+{
+  "name": "typescript-for-api-contracts",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Jon Mellman",
+  "license": "MIT",
+  "scripts": {
+    "typecheck:client": "tsc -p ./client --noEmit",
+    "typecheck:server": "tsc -p ./server --noEmit",
+    "build:client": "yarn typecheck:client && esbuild ./client --bundle --outfile=server/public/bundle.js",
+    "start:server": "yarn typecheck:server && yarn ts-node ./server/app.ts"
+  },
+  "devDependencies": {
+    "@tsconfig/create-react-app": "^1.0.2",
+    "@tsconfig/node16": "^1.0.3",
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.5",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "axios": "^0.27.2",
+    "esbuild": "^0.15.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

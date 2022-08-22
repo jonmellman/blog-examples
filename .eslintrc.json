@@ -1,0 +1,26 @@
+{
+  "extends": ["airbnb", "airbnb/hooks", "airbnb-typescript", "plugin:react/jsx-runtime"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "root": true,
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true
+  },
+  "parserOptions": {
+    "project": "**/tsconfig.json"
+  },
+  "rules": {
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off", // It's fine to import devDependencies in bundled code.
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "@typescript-eslint/indent": "off", // https://github.com/typescript-eslint/typescript-eslint/issues/1824
+    "quotes": ["error", "single"]
+  }
+}
